@@ -233,7 +233,7 @@ body {
     justify-content: flex-start;
     align-items: flex-end;
     padding: 100px;
-    background-image: url("https://i.imgur.com/Yp3e4n1.jpg");
+    background-image: url("https://i.imgur.com/sccYZMo.jpg");
     /* /background: url(../img/01.jpg); */
     background-size: cover;
     background-position: center;
@@ -602,49 +602,40 @@ body {
 }
 
 .white {
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 /* CONTATO - CSS */
 
 /* RODAPÉ - CSS */
 
-.footer-area {
+.footer {
+    max-width: 100%;
+    overflow: auto;
     background: #223645;
 }
 
-.footer-top {
-    padding: 30px 30px;
-}
-
-.footer-box {
-    margin-bottom: 15px;
-}
-
-.padding-left {
-    padding-left: 20px;
-}
-
-.footer-menu ul li {
-    margin-bottom: 25px;
-    float: left;
-    width: 50%;
-}
-
-    .footer-menu ul li a {
+    .footer,
+    .footer a {
         color: #FFFFFF;
         font-weight: 500;
     }
 
-.copyright {
-    border-top: 1px solid #35434e;
-    padding: 25px 20px;
-}
+        .footer p {
+            color: #fff;
+            margin-bottom: 0;
+            text-align: center;
+        }
 
-.footer-copyright p.white-color {
-    color: #fff;
-    margin-bottom: 0;
-}
+        .footer .footer-cols {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2rem;
+        }
+
+        .footer li {
+            line-height: 1;
+        }
 
 /* RODAPÉ - CSS */
 
