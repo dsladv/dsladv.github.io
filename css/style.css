@@ -1,6 +1,5 @@
 /* 
-DSL CSS: 
-Categoria: Tema básico
+DSL CSS: Tema básico
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Rubik:wght@400;500;700&display=swap');
@@ -114,15 +113,15 @@ body {
     margin-bottom: 0;
 }
 
-        .social-icons ul li a {
-            color: #647589;
-            transition: .3s linear all;
-            margin-left: 15px;
-        }
+    .social-icons ul li a {
+        color: #647589;
+        transition: .3s linear all;
+        margin-left: 15px;
+    }
 
-            .social-icons ul li a:hover {
-                color: #223645;
-            }
+        .social-icons ul li a:hover {
+            color: #223645;
+        }
 
 
 /* header ends */
@@ -620,10 +619,13 @@ body {
         color: #FFFFFF;
         font-weight: 500;
     }
+        .footer a:hover {
+            text-decoration: underline;
+        }
 
         .footer p {
             color: #fff;
-            margin-bottom: 0;
+            margin-bottom: 30;
             text-align: center;
         }
 
@@ -633,9 +635,13 @@ body {
             grid-gap: 2rem;
         }
 
-        .footer li {
-            line-height: 1;
-        }
+.footer-top {
+    padding: 30px 30px;
+}
+
+.footer li {
+    line-height: 1;
+}
 
 /* RODAPÉ - CSS */
 
@@ -1682,3 +1688,196 @@ body {
 
 
 /* homepage 03 ends */
+
+/* COOKIE */
+.cookie-notification {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999999;
+    color: #fff;
+    visibility: hidden;
+    text-align: center;
+}
+
+    .cookie-notification a:hover {
+        color: #fff;
+    }
+
+.wp-block-column.cookie-svg {
+    max-width: 20%;
+    float: left;
+    margin-right: 10px;
+}
+
+@media (max-width:479.98px) {
+    .cookie-notification > div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:689.98px) {
+    .cookie-notification {
+        right: 0;
+    }
+
+        .cookie-notification > div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+}
+
+@media (max-width:689.98px) {
+    .cookie-notification {
+        background: #fff;
+    }
+}
+
+@media (min-width:690px) {
+    .cookie-notification {
+        padding: 0 25px 25px 25px
+    }
+
+        .cookie-notification .ct-cookies-content {
+            margin-bottom: 15px;
+        }
+}
+
+.cookie-notification .container {
+    position: relative;
+}
+
+@media (max-width:689.98px) {
+    .cookie-notification .container {
+        width: 88%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width:690px) {
+    .cookie-notification .container {
+        background: #000000;
+        opacity: 0.9;
+        -webkit-box-shadow: 0 5px 30px -5px rgba(34, 56, 101, .15);
+        box-shadow: 0 5px 30px -5px rgba(34, 56, 101, .15);
+        padding: 20px;
+        border-radius: 3px;
+        max-width: 330px;
+    }
+}
+
+.cookie-notification .ct-cookies-content {
+    font-family: inherit;
+    text-align: left;
+    color: #fff;
+    line-height: 1.4;
+}
+
+    .cookie-notification .ct-cookies-content a {
+        color: #086AD8;
+        text-decoration: none;
+    }
+
+@media (max-width:479.98px) {
+    .cookie-notification .ct-cookies-content {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width:689.98px) {
+    .cookie-notification .ct-cookies-content {
+        font-size: 12px
+    }
+}
+
+@media (min-width:690px) {
+    .cookie-notification .ct-cookies-content {
+        font-size: 14px;
+    }
+}
+
+.cookie-notification .ct-accept {
+    color: #fff;
+    text-transform: uppercase;
+    background: #086AD8;
+    border: 0;
+    padding: 0 20px;
+    height: 35px;
+    border-radius: 3px;
+    cursor: pointer;
+    --buttonShadow: none;
+    --buttonTransform: none;
+    margin: 0 auto;
+}
+
+@media (max-width:479.98px) {
+    .cookie-notification .ct-accept {
+        width: 100%;
+    }
+}
+
+@media (min-width:480px) and (max-width:689.98px) {
+    .cookie-notification .ct-accept {
+        margin-left: 20px;
+    }
+}
+
+.cookie-notification .ct-close {
+    color: #fff !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 17px;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    opacity: .5;
+    color: inherit;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: 0 0;
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+}
+
+    .cookie-notification .ct-close:focus {
+        outline: 0;
+    }
+
+    .cookie-notification .ct-close:hover {
+        opacity: 1;
+    }
+
+@media (max-width:689.98px) {
+    .cookie-notification .ct-close {
+        display: none;
+    }
+
+    .wp-block-column.cookie-svg {
+        display: none;
+    }
+}
+
+/* COOKIE */
